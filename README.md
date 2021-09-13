@@ -1,6 +1,6 @@
 # math-magician
 
-This is a simple project setup using react js
+This is a simple math-magician project setup using react js.
 
 ## Built With
 
