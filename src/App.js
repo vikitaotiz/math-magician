@@ -6,10 +6,10 @@ class App extends Component {
     super(props);
     this.state = {};
   }
-  
+
   render() {
     return (
-      <div className='container'>
+      <div className={'container'}>
         <Calculator />
       </div>
     );
