@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Calculator from "./components/Calculator";
+import Calculator from './components/Calculator';
 
 export class App extends Component {
   render() {
@@ -7,7 +7,7 @@ export class App extends Component {
       <div className='container'>
         <Calculator />
       </div>
-    )
+    );
   }
 }
 

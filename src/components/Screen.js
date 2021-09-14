@@ -6,7 +6,7 @@ export class Screen extends Component {
             <div className='screen'>
                 0
             </div>
-        )
+        );
     }
 }
 

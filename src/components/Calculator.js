@@ -9,7 +9,7 @@ export class Calculator extends Component {
                 <Screen />
                 <Numpad />
             </div>
-        )
+        );
     }
 }
 
