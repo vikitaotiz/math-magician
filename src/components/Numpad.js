@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class Numpad extends Component {
+class Numpad extends Component {
     render() {
         return (
             <div>
