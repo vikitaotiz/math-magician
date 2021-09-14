@@ -5,6 +5,7 @@ class Screen extends Component {
     super(props);
     this.state = {};
   }
+  
   render() {
     return (
       <div className='screen'>
@@ -15,4 +16,3 @@ class Screen extends Component {
 }
 
 export default Screen;
-

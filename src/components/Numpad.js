@@ -5,6 +5,7 @@ class Numpad extends Component {
     super(props);
     this.state = {};
   }
+  
   render() {
     return (
       <div>
@@ -34,7 +35,7 @@ class Numpad extends Component {
             <td className='operator'>+</td>
           </tr>
           <tr>
-            <td colspan='2'>0</td>
+            <td colSpan='2'>0</td>
             <td>.</td>
             <td className='operator'>=</td>
           </tr>
