@@ -20,7 +20,7 @@ class Numpad extends Component {
             <td>7</td>
             <td>8</td>
             <td>9</td>
-              <td className="operator">x</td>
+            <td className="operator">x</td>
           </tr>
           <tr>
             <td>4</td>
@@ -45,4 +45,4 @@ class Numpad extends Component {
   }
 }
 
-export default Numpad
+export default Numpad;
