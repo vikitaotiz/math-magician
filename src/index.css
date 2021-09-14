@@ -1,27 +1,60 @@
 body {
+  padding: 0;
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+.container {
+  border: 1px solid;
+}
+
+.screen {
+  background: #858694;
+  color: white;
+  border: 1px solid;
+  text-align: right;
+  padding: 4%;
+}
+
+table {
+  width: 100%;
+  height: 540px;
+  border-collapse: collapse;
+}
+
+table td {
+  border: 1px solid rgb(155, 155, 155);
+  padding: 2%;
+  cursor: pointer;
+  text-align: center;
+  background: #e0e0e0;
+  font-weight: bolder;
+}
+
+table td:hover {
+  background: #fff;
+}
+
+table tr:first-child td {
+  border-top: none;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table tr td:first-child {
+  border-left: none;
+}
+
+table tr td:last-child {
+  border-right: none;
+}
+
+.operator {
+  background: #f5913e;
+  border-bottom: 1px solid white;
+}
+
+.calc {
+  border: 1px solid;
 }
