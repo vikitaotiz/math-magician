@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export class Screen extends Component {
     render() {
@@ -10,5 +10,5 @@ export class Screen extends Component {
     }
 }
 
-export default Screen
+export default Screen;
 
