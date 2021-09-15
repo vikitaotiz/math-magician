@@ -9,9 +9,10 @@ class Screen extends Component {
 
   render() {
     const { total, operation, next } = this.props;
+    const totalVal = Number(total);
     return (
       <div className="screen">
-        {`${total || ''} ${operation || ''} ${next || ''}`}
+        {`${totalVal || ''} ${operation || ''} ${next || ''}`}
       </div>
     );
   }
@@ -21,6 +22,12 @@ Screen.propTypes = {
   total: propTypes.number,
   operation: propTypes.string,
   next: propTypes.string,
+};
+
+Screen.defaultProps = {
+  total: 0,
+  operation: '',
+  next: '',
 };
 
 export default Screen;

@@ -55,7 +55,7 @@ class Numpad extends Component {
 }
 
 Numpad.propTypes = {
-  onKeyPress: propTypes.func.isRequired
-}
+  onKeyPress: propTypes.func.isRequired,
+};
 
 export default Numpad;
