@@ -6,7 +6,7 @@ import calculate from '../logic/calculate';
 class Calculator extends Component {
   constructor(props) {
     super(props);
-      this.state = {
+    this.state = {
       total: 0,
       next: null,
       operation: null,
@@ -18,11 +18,12 @@ class Calculator extends Component {
   }
 
   render() {
+    const { total, operation, next } = this.state;
     return (
-      <div>
-          <Screen total={this.state.total} operation={this.state.operation} next={this.state.next}/>
-          <Numpad onKeyPress={this.onKeyPress} />
-      </div>
+        <div>
+            <Screen total={total} operation={operation} next={next}/>
+            <Numpad onKeyPress={this.onKeyPress} />
+        </div>
     );
   }
 }
