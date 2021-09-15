@@ -5,9 +5,10 @@ class Numpad extends Component {
     super(props);
     this.state = {};
   }
-    
+
   btnClick = (e) => {
-    this.props.onKeyPress(e.target.innerHTML)
+    const { innerHTML } = e.target;
+    this.props.onKeyPress(innerHTML);
   }
 
   render() {

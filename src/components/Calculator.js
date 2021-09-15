@@ -21,8 +21,8 @@ class Calculator extends Component {
     const { total, operation, next } = this.state;
     return (
       <div>
-          <Screen total={total} operation={operation} next={next}/>
-          <Numpad onKeyPress={this.onKeyPress} />
+        <Screen total={total} operation={operation} next={next}/>
+        <Numpad onKeyPress={this.onKeyPress} />
       </div>
     );
   }
