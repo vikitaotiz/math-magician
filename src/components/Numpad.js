@@ -46,7 +46,7 @@ class Numpad extends Component {
               <td colSpan="2"><button type="button" onClick={this.btnClick} className="btn">0</button></td>
               <td><button type="button" onClick={this.btnClick} className="btn">.</button></td>
               <td><button type="button" onClick={this.btnClick} className="operator">=</button></td>
-            </tr>          
+            </tr>
           </tbody>
         </table>
       </div>
