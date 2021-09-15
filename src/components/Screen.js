@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react';
 
-const Screen = () => {
+class Screen extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
     return (
-        <div>
-            Screen
-        </div>
-    )
+      <div className="screen">0</div>
+    );
+  }
 }
 
-export default Screen
+export default Screen;

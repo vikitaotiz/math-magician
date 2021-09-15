@@ -1,16 +1,21 @@
-import React from 'react'
-import Screen from './Screen'
-import Numpad from './Numpad'
-import Operators from './Operators'
+import React, { Component } from 'react';
+import Screen from './Screen';
+import Numpad from './Numpad';
 
-const Calculator = () => {
+class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
     return (
-        <div>
-            <Screen />
-            <Numpad />
-            <Operators />
-        </div>
-    )
+      <div>
+        <Screen />
+        <Numpad />
+      </div>
+    );
+  }
 }
 
-export default Calculator
+export default Calculator;
