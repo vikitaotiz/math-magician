@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
 
 class Numpad extends Component {
   constructor(props) {
@@ -8,7 +9,8 @@ class Numpad extends Component {
 
   btnClick = (e) => {
     const { innerHTML } = e.target;
-    this.props.onKeyPress(innerHTML);
+    const { onKeyPress } = this.props;
+    onKeyPress(innerHTML);
   }
 
   render() {
@@ -50,6 +52,10 @@ class Numpad extends Component {
       </div>
     );
   }
+}
+
+Numpad.propTypes = {
+  onKeyPress: propTypes.func.isRequired
 }
 
 export default Numpad;

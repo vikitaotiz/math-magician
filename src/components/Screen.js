@@ -1,3 +1,4 @@
+import propTypes from 'prop-types';
 import React, { Component } from 'react';
 
 class Screen extends Component {
@@ -7,12 +8,19 @@ class Screen extends Component {
   }
 
   render() {
+    const { total, operation, next } = this.props;
     return (
       <div className="screen">
-        {this.props.total} {this.props.operation} {this.props.next}
+        {`${total || ''} ${operation || ''} ${next || ''}`}
       </div>
     );
   }
 }
+
+Screen.propTypes = {
+  total: propTypes.string.isRequired,
+  operation: propTypes.string.isRequired,
+  next: propTypes.string.isRequired,
+};
 
 export default Screen;
