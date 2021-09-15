@@ -20,12 +20,12 @@ class Calculator extends Component {
   render() {
     const { total, operation, next } = this.state;
     return (
-        <div>
-            <Screen total={total} operation={operation} next={next}/>
-            <Numpad onKeyPress={this.onKeyPress} />
-        </div>
+      <div>
+          <Screen total={total} operation={operation} next={next}/>
+          <Numpad onKeyPress={this.onKeyPress} />
+      </div>
     );
   }
 }
 
-export default Calculator
+export default Calculator;
