@@ -19,33 +19,33 @@ class Numpad extends Component {
         <table>
           <tbody>
             <tr>
-              <td onClick={this.btnClick}>AC</td>
-              <td onClick={this.btnClick}>+/-</td>
-              <td onClick={this.btnClick}>%</td>
-              <td onClick={this.btnClick} className="operator">&divide;</td>
+              <td><button type="button" onClick={this.btnClick} className="btn">AC</button></td>
+              <td><button type="button" onClick={this.btnClick} className="btn">+/-</button></td>
+              <td><button type="button" onClick={this.btnClick} className="btn">%</button></td>
+              <td><button type="button" onClick={this.btnClick} className="operator">/</button></td>
             </tr>
             <tr>
-              <td onClick={this.btnClick}>7</td>
-              <td onClick={this.btnClick}>8</td>
-              <td onClick={this.btnClick}>9</td>
-              <td onClick={this.btnClick} className="operator">x</td>
+              <td><button type="button" onClick={this.btnClick} className="btn">7</button></td>
+              <td><button type="button" onClick={this.btnClick} className="btn">8</button></td>
+              <td><button type="button" onClick={this.btnClick} className="btn">9</button></td>
+              <td><button type="button" onClick={this.btnClick} className="operator">x</button></td>
             </tr>
             <tr>
-              <td onClick={this.btnClick}>4</td>
-              <td onClick={this.btnClick}>5</td>
-              <td onClick={this.btnClick}>6</td>
-              <td onClick={this.btnClick} className="operator">-</td>
+              <td><button type="button" onClick={this.btnClick} className="btn">4</button></td>
+              <td><button type="button" onClick={this.btnClick} className="btn">5</button></td>
+              <td><button type="button" onClick={this.btnClick} className="btn">6</button></td>
+              <td><button type="button" onClick={this.btnClick} className="operator">-</button></td>
             </tr>
             <tr>
-              <td onClick={this.btnClick}>1</td>
-              <td onClick={this.btnClick}>2</td>
-              <td onClick={this.btnClick}>3</td>
-              <td onClick={this.btnClick} className="operator">+</td>
+              <td><button type="button" onClick={this.btnClick} className="btn">1</button></td>
+              <td><button type="button" onClick={this.btnClick} className="btn">2</button></td>
+              <td><button type="button" onClick={this.btnClick} className="btn">3</button></td>
+              <td><button type="button" onClick={this.btnClick} className="operator">+</button></td>
             </tr>
             <tr>
-              <td onClick={this.btnClick} colSpan="2">0</td>
-              <td onClick={this.btnClick}>.</td>
-              <td onClick={this.btnClick} className="operator">=</td>
+              <td colSpan="2"><button type="button" onClick={this.btnClick} className="btn">0</button></td>
+              <td><button type="button" onClick={this.btnClick} className="btn">.</button></td>
+              <td><button type="button" onClick={this.btnClick} className="operator">=</button></td>
             </tr>          
           </tbody>
         </table>

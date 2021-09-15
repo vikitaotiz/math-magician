@@ -18,9 +18,9 @@ class Screen extends Component {
 }
 
 Screen.propTypes = {
-  total: propTypes.string.isRequired,
-  operation: propTypes.string.isRequired,
-  next: propTypes.string.isRequired,
+  total: propTypes.number,
+  operation: propTypes.string,
+  next: propTypes.string,
 };
 
 export default Screen;
