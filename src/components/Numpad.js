@@ -5,40 +5,46 @@ class Numpad extends Component {
     super(props);
     this.state = {};
   }
+    
+  btnClick = (e) => {
+    this.props.onKeyPress(e.target.innerHTML)
+  }
 
   render() {
     return (
       <div>
         <table>
-          <tr>
-            <td>AC</td>
-            <td>+/-</td>
-            <td>%</td>
-            <td className="operator">&divide;</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td className="operator">x</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td className="operator">-</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td className="operator">+</td>
-          </tr>
-          <tr>
-            <td colSpan="2">0</td>
-            <td>.</td>
-            <td className="operator">=</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td onClick={this.btnClick}>AC</td>
+              <td onClick={this.btnClick}>+/-</td>
+              <td onClick={this.btnClick}>%</td>
+              <td onClick={this.btnClick} className="operator">&divide;</td>
+            </tr>
+            <tr>
+              <td onClick={this.btnClick}>7</td>
+              <td onClick={this.btnClick}>8</td>
+              <td onClick={this.btnClick}>9</td>
+              <td onClick={this.btnClick} className="operator">x</td>
+            </tr>
+            <tr>
+              <td onClick={this.btnClick}>4</td>
+              <td onClick={this.btnClick}>5</td>
+              <td onClick={this.btnClick}>6</td>
+              <td onClick={this.btnClick} className="operator">-</td>
+            </tr>
+            <tr>
+              <td onClick={this.btnClick}>1</td>
+              <td onClick={this.btnClick}>2</td>
+              <td onClick={this.btnClick}>3</td>
+              <td onClick={this.btnClick} className="operator">+</td>
+            </tr>
+            <tr>
+              <td onClick={this.btnClick} colSpan="2">0</td>
+              <td onClick={this.btnClick}>.</td>
+              <td onClick={this.btnClick} className="operator">=</td>
+            </tr>          
+          </tbody>
         </table>
       </div>
     );
