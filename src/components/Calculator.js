@@ -8,7 +8,7 @@ const Calculator = () => {
 
   const onKeyPress = (data) => {
     setState(Calculate(obj, data));
-  }
+  };
 
   return (
     <div>

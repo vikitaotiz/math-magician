@@ -2,13 +2,13 @@ import propTypes from 'prop-types';
 
 const Screen = ({ total, operation, next }) => {
   const totalVal = Number(total);
-  console.log(typeof total)
+
   return (
     <div className="screen">
-      {`${totalVal} ${operation ? operation : ''} ${next ? next : ''}`}
+      {`${totalVal} ${operation || ''} ${next || ''}`}
     </div>
   );
-}
+};
 
 Screen.propTypes = {
   total: propTypes.number,
@@ -22,4 +22,4 @@ Screen.defaultProps = {
   next: '',
 };
 
-export default Screen
+export default Screen;
