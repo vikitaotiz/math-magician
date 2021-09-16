@@ -1,16 +1,25 @@
-import React, { Component } from 'react';
+import propTypes from 'prop-types';
 
-class Screen extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <div className="screen">0</div>
-    );
-  }
+const Screen = ({ total, operation, next }) => {
+  const totalVal = Number(total);
+  console.log(typeof total)
+  return (
+    <div className="screen">
+      {`${totalVal} ${operation ? operation : ''} ${next ? next : ''}`}
+    </div>
+  );
 }
 
-export default Screen;
+Screen.propTypes = {
+  total: propTypes.number,
+  operation: propTypes.string,
+  next: propTypes.string,
+};
+
+Screen.defaultProps = {
+  total: 0,
+  operation: '',
+  next: '',
+};
+
+export default Screen

@@ -17,15 +17,11 @@ body {
 
 table {
   width: 100%;
-  height: 540px;
   border-collapse: collapse;
 }
 
 table td {
-  border: 1px solid rgb(155, 155, 155);
-  padding: 2%;
-  cursor: pointer;
-  text-align: center;
+  border: 1px solid rgb(122, 85, 85);
   background: #e0e0e0;
   font-weight: bolder;
 }
@@ -52,7 +48,18 @@ table tr td:last-child {
 
 .operator {
   background: #f5913e;
-  border-bottom: 1px solid white;
+  border: none;
+  width: 100%;
+  height: 100px;
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  width: 100%;
+  height: 100px;
+  cursor: pointer;
+  background: #e0e0e0;
 }
 
 .calc {

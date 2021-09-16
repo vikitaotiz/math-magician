@@ -1,48 +1,52 @@
-import React, { Component } from 'react';
+import propTypes from 'prop-types';
 
-class Numpad extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
+const Numpad = ({ onKeyPress }) => {
+  const btnClick = (e) => {
+    const { innerHTML } = e.target;
+    onKeyPress(innerHTML)
   }
 
-  render() {
-    return (
+  return (
       <div>
         <table>
-          <tr>
-            <td>AC</td>
-            <td>+/-</td>
-            <td>%</td>
-            <td className="operator">&divide;</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td className="operator">x</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td className="operator">-</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td className="operator">+</td>
-          </tr>
-          <tr>
-            <td colSpan="2">0</td>
-            <td>.</td>
-            <td className="operator">=</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td><button type="button" onClick={btnClick} className="btn">AC</button></td>
+              <td><button type="button" onClick={btnClick} className="btn">+/-</button></td>
+              <td><button type="button" onClick={btnClick} className="btn">%</button></td>
+              <td><button type="button" onClick={btnClick} className="operator">/</button></td>
+            </tr>
+            <tr>
+              <td><button type="button" onClick={btnClick} className="btn">7</button></td>
+              <td><button type="button" onClick={btnClick} className="btn">8</button></td>
+              <td><button type="button" onClick={btnClick} className="btn">9</button></td>
+              <td><button type="button" onClick={btnClick} className="operator">x</button></td>
+            </tr>
+            <tr>
+              <td><button type="button" onClick={btnClick} className="btn">4</button></td>
+              <td><button type="button" onClick={btnClick} className="btn">5</button></td>
+              <td><button type="button" onClick={btnClick} className="btn">6</button></td>
+              <td><button type="button" onClick={btnClick} className="operator">-</button></td>
+            </tr>
+            <tr>
+              <td><button type="button" onClick={btnClick} className="btn">1</button></td>
+              <td><button type="button" onClick={btnClick} className="btn">2</button></td>
+              <td><button type="button" onClick={btnClick} className="btn">3</button></td>
+              <td><button type="button" onClick={btnClick} className="operator">+</button></td>
+            </tr>
+            <tr>
+              <td colSpan="2"><button type="button" onClick={btnClick} className="btn">0</button></td>
+              <td><button type="button" onClick={btnClick} className="btn">.</button></td>
+              <td><button type="button" onClick={btnClick} className="operator">=</button></td>
+            </tr>
+          </tbody>
         </table>
       </div>
     );
-  }
 }
 
-export default Numpad;
+Numpad.propTypes = {
+  onKeyPress: propTypes.func.isRequired,
+};
+
+export default Numpad
