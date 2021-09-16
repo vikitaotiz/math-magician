@@ -5,17 +5,17 @@ import Calculate from '../logic/calculate';
 
 const Calculator = () => {
   const [obj, setState] = useState({ total: null, next: null, operation: null });
-  
+
   const onKeyPress = (data) => {
     setState(Calculate(obj, data));
-  }
+  };
 
   return (
-      <div>
-        <Screen total={obj.total} operation={obj.operation} next={obj.next} />
-        <Numpad onKeyPress={onKeyPress} />
-      </div>
-    );
-}
+    <div>
+      <Screen total={obj.total} operation={obj.operation} next={obj.next} />
+      <Numpad onKeyPress={onKeyPress} />
+    </div>
+  );
+};
 
-export default Calculator
+export default Calculator;
