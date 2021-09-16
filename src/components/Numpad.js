@@ -2,7 +2,8 @@ import propTypes from 'prop-types';
 
 const Numpad = ({ onKeyPress }) => {
   const btnClick = (e) => {
-    const { innerHTML } = e.target;
+    let { innerHTML } = e.target;
+    if (e.target.innerHTML === 'X') innerHTML = '*';
     onKeyPress(innerHTML);
   };
 
@@ -20,7 +21,7 @@ const Numpad = ({ onKeyPress }) => {
             <td><button type="button" onClick={btnClick} className="btn">7</button></td>
             <td><button type="button" onClick={btnClick} className="btn">8</button></td>
             <td><button type="button" onClick={btnClick} className="btn">9</button></td>
-            <td><button type="button" onClick={btnClick} className="operator">x</button></td>
+            <td><button type="button" onClick={btnClick} className="operator">X</button></td>
           </tr>
           <tr>
             <td><button type="button" onClick={btnClick} className="btn">4</button></td>
