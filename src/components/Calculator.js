@@ -1,31 +1,21 @@
-import React, { Component } from 'react';
+import { useState } from 'react';
 import Screen from './Screen';
 import Numpad from './Numpad';
-import calculate from '../logic/calculate';
+import Calculate from '../logic/calculate';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: 0,
-      next: null,
-      operation: null,
-    };
+const Calculator = () => {
+  const [obj, setState] = useState({ total: null, next: null, operation: null });
+  
+  const onKeyPress = (data) => {
+    setState(Calculate(obj, data));
   }
 
-  onKeyPress = (data) => {
-    this.setState((obj) => calculate(obj, data));
-  }
-
-  render() {
-    const { total, operation, next } = this.state;
-    return (
+  return (
       <div>
-        <Screen total={total} operation={operation} next={next} />
-        <Numpad onKeyPress={this.onKeyPress} />
+        <Screen total={obj.total} operation={obj.operation} next={obj.next} />
+        <Numpad onKeyPress={onKeyPress} />
       </div>
     );
-  }
 }
 
-export default Calculator;
+export default Calculator

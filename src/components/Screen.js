@@ -1,21 +1,13 @@
 import propTypes from 'prop-types';
-import React, { Component } from 'react';
 
-class Screen extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    const { total, operation, next } = this.props;
-    const totalVal = Number(total);
-    return (
-      <div className="screen">
-        {`${totalVal || ''} ${operation || ''} ${next || ''}`}
-      </div>
-    );
-  }
+const Screen = ({ total, operation, next }) => {
+  const totalVal = Number(total);
+  console.log(typeof total)
+  return (
+    <div className="screen">
+      {`${totalVal} ${operation ? operation : ''} ${next ? next : ''}`}
+    </div>
+  );
 }
 
 Screen.propTypes = {
@@ -30,4 +22,4 @@ Screen.defaultProps = {
   next: '',
 };
 
-export default Screen;
+export default Screen
