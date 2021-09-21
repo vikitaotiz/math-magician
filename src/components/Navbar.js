@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-	<div className="nav">
+	return (
+		<div className="nav">
 		<h3 className="title"><Link to="/">Math Magician</Link></h3>
 		<div>
 			<ul className="links">
@@ -11,6 +12,7 @@ const Navbar = () => {
 			</ul>
 		</div>
   </div>
+	);
 };
 
 export default Navbar;
