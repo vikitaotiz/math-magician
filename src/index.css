@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .container {
@@ -50,18 +51,73 @@ table tr td:last-child {
   background: #f5913e;
   border: none;
   width: 100%;
-  height: 100px;
+  height: 80px;
   cursor: pointer;
 }
 
 .btn {
   border: none;
   width: 100%;
-  height: 100px;
+  height: 80px;
   cursor: pointer;
   background: #e0e0e0;
 }
 
 .calc {
   border: 1px solid;
+}
+
+.nav {
+  color: #e0e0e0;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background: #858694;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.links {
+  list-style: none;
+  padding: 4px;
+  float: right;
+}
+
+.links li {
+  display: inline;
+  margin: 2px;
+  text-transform: uppercase;
+  color: #e0e0e0;
+}
+
+a:link {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #e0e0e0;
+}
+
+a:hover {
+  color: #f5913e;
+}
+
+a:active {
+  color: yellow;
+}
+
+.wrapper {
+  padding: 3%;
+}
+
+.wrap {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.calculator {
+  padding: 3%;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-gap: 3%;
 }
