@@ -10,8 +10,7 @@ const App = () => {
       path="/"
       exact
       render={() => (
-      <>
-        <div className="wrapper">
+        `<div className="wrapper">
           <h3>Welcome to our page!</h3>
           <hr />
           <p className="wrap">
@@ -47,8 +46,7 @@ const App = () => {
             and more recently with desktop publishing software like Aldus PageMaker
             including versions of Lorem Ipsum.
           </p>
-        </div>
-      </>
+        </div>`
       )}
     />
     <Route path="/calculator" component={Calculator}/>
