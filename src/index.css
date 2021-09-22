@@ -31,6 +31,10 @@ table td:hover {
   background: #fff;
 }
 
+table td:hover {
+  background: #fff;
+}
+
 table tr:first-child td {
   border-top: none;
 }
