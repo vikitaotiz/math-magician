@@ -9,6 +9,9 @@ This is a simple math-magician project setup using react js.
 - React
 - Javascript
 
+# Screenshot
+![print](https://user-images.githubusercontent.com/42869046/134296608-0173f305-5ead-44f2-849b-528833ea4f9c.JPG)
+
 ## Getting Started
 
 - Click on the `Code` green button
