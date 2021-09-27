@@ -11,8 +11,8 @@ This is a simple math-magician project setup using react js.
 
 # Demo Links
 
-[Heroku](https://math-magician-app.herokuapp.com/)
-[Netlify](https://eloquent-liskov-072616.netlify.app/)
+- [Heroku](https://math-magician-app.herokuapp.com/)
+- [Netlify](https://eloquent-liskov-072616.netlify.app/)
 
 # Screenshot
 
